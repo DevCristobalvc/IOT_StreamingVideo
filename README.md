@@ -6,9 +6,9 @@ Este documento describe los pasos necesarios para configurar y ejecutar un proye
 
 1. Cristobal Valencia
 2. Santiago Calero
-3. xxxxxxxxxx
-4. xxxxxxxxxx
-5. xxxxxxxxxx
+3. Juan Pablo Uribe
+4. Jessica Valencia
+5. Stiven Tapia
 
 ## Requisitos previos
 
