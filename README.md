@@ -1,8 +1,14 @@
-# IOT_Streaming
-
 # Proyecto final IOT02 2024A - Video Streaming
 
 Este documento describe los pasos necesarios para configurar y ejecutar un proyecto web que utiliza WebSocket y Express. A continuación se detallan las instrucciones de instalación de las herramientas necesarias y los pasos para clonar y ejecutar el proyecto.
+
+# Autores
+
+1. Cristobal Valencia
+2. Santiago Calero
+3. xxxxxxxxxx
+4. xxxxxxxxxx
+5. xxxxxxxxxx
 
 ## Requisitos previos
 
@@ -95,3 +101,17 @@ Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
    ```bash
    git checkout -b nombre-de-tu-rama
    ```
+2. *Realizar tus cambios y confirmar los cambios*:
+    ```bash
+    git commit -am 'Descripción de los cambios'
+    ```
+2. Enviar los cambios a tu repositorio remoto:
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
+3. Crear un Pull Request en GitHub para que tus cambios sean revisados e integrados.
+
+# Contacto
+Para cualquier duda o sugerencia, por favor contacta a [cristobalvalencia3002@gmail.com].
+
+¡Gracias por utilizar este proyecto!
