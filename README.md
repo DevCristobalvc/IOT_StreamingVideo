@@ -45,13 +45,14 @@ Asegúrate de tener las siguientes herramientas instaladas en tu máquina:
 
 2. *Clonar el Repositorio*:
    - Navega a la ubicación donde deseas clonar el proyecto:
-     bash
+     ```bash
      cd /ruta/donde/deseas/clonar/el/proyecto
-     
+     ```
+
    - Clona el repositorio utilizando el comando git clone:
-     bash
+     ```bash
      git clone https://github.com/DevCristobalvc/IOT_Streaming.git
-     
+     ```
 
 ## Configuración del Proyecto
 
