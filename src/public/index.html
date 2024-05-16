@@ -1,103 +1,47 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emitir video hacia visualizar</title>
-
-<script src="/socket.io/socket.io.js"></script>
-
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>emision en directo</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="emitir.html">Emitir</a></li>
+            <li><a href="visualizar.html">Visualizar</a></li>
+        </ul>
+    </nav>
 
+    <h1>Menú Principal</h1>
 
-    <button id="btn">emitir</button>
+    <div class="menu">
+        <a href="emitir.html" class="menu-item">Emitir Video</a>
+        <a href="visualizar.html" class="menu-item">Visualizar Emisión</a>
+    </div>
 
-
-    <video src="" id="video" style="width: 800px; height: 600px;" autoplay> </video>
-
-    <canvas id="preview"></canvas>
-    <div class="status"></div>
-
-
-    <script>
-
-
-     var canvas = document.querySelector('#preview');
-
-     var context = canvas.getContext('2d');
-
-     var btn = document.querySelector('#btn');
-
-     canvas.style.display = 'none';
-     canvas.width = 512;
-     canvas.height = 384;
-
-     
-     context.width = canvas.width;
-     context.height = canvas.height;
-
-
-     var video = document.querySelector('#video');
-    var socket = io();
-
-    function publicarMensaje(msg){
-
- 
-        document.querySelector('.status').innerText = msg;
-
-    }
-
-    
-
-    function loadCamara(stream ){
-
-
-        video.srcObject = stream;
-        publicarMensaje('camara funcionanado');
-
-    }
-
-
-    function errorCamara(){
-
-        publicarMensaje('camara ha fallado');
-    }
-
-
-    function verVideo(video,context){
-
-        context.drawImage(video,0,0,context.width,context.height);
-
-        socket.emit('stream',canvas.toDataURL('image/webp'));
-
-    }
-
-    
-    btn.addEventListener('click',()=>{
-
-
-        navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msgGetUserMedia);
-
-        if(navigator.getUserMedia){
-
-
-            navigator.getUserMedia({video:true}, loadCamara,errorCamara)
-
+    <style>
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
         }
 
-        var intervalo = setInterval(() => {
+        .menu-item {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-
-            verVideo(video,context);
-        },30)
-
-    })
-
-
-    </script>
+        .menu-item:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </body>
 </html>

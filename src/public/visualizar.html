@@ -1,36 +1,29 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>visualizar la emision</title>
-    <script src="socket.io/socket.io.js" ></script>
+    <title>Visualizar la Emisión</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/socket.io/socket.io.js"></script>
 </head>
-
-
-
 <body>
-    
-<img id="play" src="" alt="">       </img>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
 
+    <h1>Visualizar la Emisión</h1>
 
-<script>
-var socket = io();
-socket.on('stream',(image) => {
+    <img id="play" src="" alt="Stream en directo">
 
-let img = document.getElementById('play');
-img.src = image;
-
-
-})
-
-</script>
-
-
+    <script>
+        var socket = io();
+        socket.on('stream', (image) => {
+            let img = document.getElementById('play');
+            img.src = image;
+        });
+    </script>
 </body>
-
-
-
 </html>
