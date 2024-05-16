@@ -65,17 +65,18 @@ Asegúrate de tener las siguientes herramientas instaladas en tu máquina:
 2. *Instalar dependencias*:
    - Asegúrate de tener Node.js instalado. Puedes verificarlo ejecutando node -v y npm -v.
    - Instala las dependencias del proyecto ejecutando:
-     bash
+     ```bash
      npm install
+     ```
      
 
 ## Ejecución del Proyecto
 
 1. *Iniciar el servidor*:
    - Para iniciar el servidor, ejecuta el siguiente comando:
-     bash
-     npm start
-     
+     ```bash
+     npm run dev
+     ```
 
 2. *Verificar la ejecución*:
    - Abre tu navegador web y navega a http://localhost:3000 (o el puerto que hayas configurado) para ver el proyecto en funcionamiento.
