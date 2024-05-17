@@ -2,6 +2,8 @@
 
 Este documento describe los pasos necesarios para configurar y ejecutar un proyecto web que utiliza WebSocket y Express. A continuación se detallan las instrucciones de instalación de las herramientas necesarias y los pasos para clonar y ejecutar el proyecto.
 
+![Mockup de RapidSell](./view.jpg)
+
 # Autores
 
 1. Cristobal Valencia
