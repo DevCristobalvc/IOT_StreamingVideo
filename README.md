@@ -77,7 +77,7 @@ Asegúrate de tener las siguientes herramientas instaladas en tu máquina:
 1. *Iniciar el servidor*:
    - Para iniciar el servidor, ejecuta el siguiente comando:
      ```bash
-     npm run dev
+     npm start
      ```
 
 2. *Verificar la ejecución*:
